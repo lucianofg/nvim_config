@@ -1,6 +1,6 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/Plugged')
-Plug 'https://github.com/plasticboy/vim-markdown'
+Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/neovimhaskell/haskell-vim'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/norcalli/nvim-colorizer.lua'
@@ -25,7 +25,6 @@ Plug 'https://github.com/NLKNguyen/papercolor-theme'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""" UNUSED """"""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" Plug 'https://github.com/jiangmiao/auto-pairs'
 " Plug 'https://github.com/ayu-theme/ayu-vim'
 " Plug 'https://github.com/yasukotelin/shirotelin'
 " Plug 'https://github.com/morhetz/gruvbox'
