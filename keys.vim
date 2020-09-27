@@ -5,7 +5,7 @@ nmap N Nzz
 nmap <C-k> :bnext<CR>
 nmap <C-j> :bprev<CR>
 
-map <M-B> :NERDTreeToggle<CR>
+map <M-B> :NERDTreeToggle<CR>r 
 noremap <M-!> :!
 noremap <M-J> :term<CR>a
 
@@ -15,6 +15,8 @@ tnoremap <C-w> <C-\><C-n><C-w>
 let mapleader = " "
 
 map <leader>nh :nohlsearch<CR>
+
+map <leader>tb :TagbarToggle<CR>
 
 map <leader>y "+y
 map <leader>p "+p

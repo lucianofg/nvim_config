@@ -1,4 +1,5 @@
 {
+    "coc.preferences.formatOnType": true,
     "languageserver": {
         "clangd": {
             "command": "clangd",
@@ -11,6 +12,14 @@
             "args": ["--lsp"],
             "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml"],
             "filetypes": ["haskell", "lhaskell"]
+        },
+        "elmLS": {
+            "command": "elm-language-server",
+            "filetypes": ["elm"],
+            "rootPatterns": ["elm.json"],
+            "initializationOptions": {
+                "elmAnalyseTrigger": "change"
+            }
         }
     }
 }

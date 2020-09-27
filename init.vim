@@ -1,8 +1,6 @@
 set title
-set number
 set hidden 
 set mouse=a
-set scroll=10
 
 set splitbelow
 set splitright
@@ -12,6 +10,7 @@ set smartcase
 set hlsearch
 
 set termguicolors
+set colorcolumn=80
 set signcolumn=yes
 set inccommand=nosplit
 
@@ -21,10 +20,19 @@ set updatetime=300
 
 set shortmess+=c " don't give |ins-completion-menu| messages.
 
-filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set textwidth=80
 
 au TermClose * call feedkeys("j")
 
 so $HOME/.config/nvim/plugins.vim
 so $HOME/.config/nvim/coc.vim
 so $HOME/.config/nvim/keys.vim
+
+set background=light
+colorscheme gruvbox
+let g:airline_theme='monochrome'
+filetype plugin indent on
