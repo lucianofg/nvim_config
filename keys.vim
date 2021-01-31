@@ -9,14 +9,15 @@ map <M-B> :NERDTreeToggle<CR>r
 noremap <M-!> :!
 noremap <M-J> :term<CR>a
 
-tnoremap <Esc> <C-\><C-n>
-tnoremap <C-w> <C-\><C-n><C-w>
+" C-b to get out of terminal mode
+tnoremap <C-b> <C-\><C-n>
 
 let mapleader = " "
 
 map <leader>nh :nohlsearch<CR>
 
 map <leader>tb :TagbarToggle<CR>
+map <leader>tf :TableFormat<CR>
 
 map <leader>y "+y
 map <leader>p "+p

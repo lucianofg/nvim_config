@@ -1,5 +1,8 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/Plugged')
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'https://github.com/godlygeek/tabular'
+Plug 'https://github.com/plasticboy/vim-markdown'
 Plug 'https://github.com/rhysd/vim-grammarous'
 Plug 'https://github.com/neovimhaskell/haskell-vim'
 Plug 'https://github.com/preservim/nerdtree'
@@ -23,9 +26,6 @@ Plug 'https://github.com/rust-lang/rust.vim'
 " Colorschemes
 Plug 'https://github.com/crusoexia/vim-monokai'
 Plug 'https://github.com/NLKNguyen/papercolor-theme'
-Plug 'https://github.com/morhetz/gruvbox'
-Plug 'https://github.com/lifepillar/vim-solarized8'
-Plug 'https://github.com/GertjanReynaert/cobalt2-vim-theme'
 call plug#end()
 
 
@@ -66,3 +66,5 @@ let g:gitgutter_preview_win_floating = 1
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
+
+let g:vim_markdown_folding_disabled = 1
