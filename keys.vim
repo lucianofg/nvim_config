@@ -16,9 +16,6 @@ let mapleader = " "
 
 map <leader>nh :nohlsearch<CR>
 
-map <leader>tb :TagbarToggle<CR>
-map <leader>tf :TableFormat<CR>
-
 map <leader>y "+y
 map <leader>p "+p
 

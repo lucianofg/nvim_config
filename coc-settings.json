@@ -12,13 +12,5 @@
             "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml"],
             "filetypes": ["haskell", "lhaskell"]
         },
-        "elmLS": {
-            "command": "elm-language-server",
-            "filetypes": ["elm"],
-            "rootPatterns": ["elm.json"],
-            "initializationOptions": {
-                "elmAnalyseTrigger": "change"
-            }
-        }
     }
 }

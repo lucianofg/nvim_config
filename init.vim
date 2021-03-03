@@ -1,7 +1,8 @@
+set wrap
+set linebreak
 set title
 set hidden 
 set mouse=a
-set number
 
 set splitbelow
 set splitright
@@ -34,4 +35,3 @@ so $HOME/.config/nvim/keys.vim
 
 set background=light
 colorscheme PaperColor
-let g:airline_theme='papercolor'
