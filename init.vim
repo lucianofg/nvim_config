@@ -4,9 +4,8 @@ set mouse=a
 
 set signcolumn=yes
 set textwidth=72
-set number
 
-" Set for performance reasons (when opening a file with large lines
+" Set for performance reasons when opening a file with large lines
 set synmaxcol=160
 set termguicolors
 
@@ -34,3 +33,5 @@ au TermClose * call feedkeys("j")
 so $HOME/.config/nvim/plugins.vim
 so $HOME/.config/nvim/keys.vim
 so $HOME/.config/nvim/coc.vim
+
+colorscheme PaperColor

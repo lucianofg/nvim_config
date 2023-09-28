@@ -1,4 +1,16 @@
 " Keybidings
+
+" Toggle Light/Dark mode 
+function LightDarkModeToggle()
+  if &background == 'light'
+    set background=dark
+  else
+    set background=light
+  endif
+endfunction
+
+nnoremap <silent> <M-l> :call LightDarkModeToggle()<CR>
+
 nmap <M-C> :e $HOME/.config/nvim/init.vim<CR>
 nmap <M-P> :e $HOME/.config/nvim/plugins.vim<CR>
 nmap n nzz
@@ -11,6 +23,8 @@ noremap <M-J> :term<CR>a
 noremap <M-B> :NERDTreeToggle<CR>
 " C-b to get out of terminal mode
 tnoremap <C-b> <C-\><C-n>
+
+noremap <M-T> :TagbarToggle<CR>
 
 let mapleader = " "
 

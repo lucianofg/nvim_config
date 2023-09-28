@@ -25,6 +25,7 @@ augroup end
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
+nmap <leader>ff :Format<CR>
 
 " Use `:Fold` to fold current buffer
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
@@ -36,9 +37,6 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 let g:coc_snippet_next = '<M-i>'
-
-" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-" 				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Coc Keys
 inoremap <silent><expr> <c-space> coc#refresh()

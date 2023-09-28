@@ -16,21 +16,22 @@ Plug 'https://github.com/airblade/vim-gitgutter' " Show changes on sign collumn
 " LSP and snippets
 Plug 'https://github.com/SirVer/ultisnips'
 Plug 'https://github.com/honza/vim-snippets'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tikhomirov/vim-glsl' " Shader language suport
 
 " Code somethings
 Plug 'https://github.com/tpope/vim-sleuth'   " To follow file tab/spaces config
 Plug 'https://github.com/tpope/vim-surround' " Create, change and delete surround characters
 
 " User interface
-Plug 'https://github.com/preservim/nerdtree'
-Plug 'https://github.com/preservim/tagbar'
+Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'https://github.com/preservim/tagbar', { 'on' : 'TagbarToggle' }
 Plug 'https://github.com/junegunn/fzf'
 Plug 'https://github.com/junegunn/fzf.vim'
 
 "" Colorschemes
-" Plug 'https://github.com/NLKNguyen/papercolor-theme' "
+Plug 'https://github.com/NLKNguyen/papercolor-theme' "
 
 call plug#end()
 

@@ -1,5 +1,5 @@
 {
-    "inlayHint.enable": false,
+    "inlayHint.enable": true,
     "clangd.arguments": [
         "--clang-tidy"
     ],
