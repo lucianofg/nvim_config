@@ -1,3 +1,15 @@
+" Plugins configuration
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:vimtex_quickfix_enabled = 0
+let g:vim_markdown_folding_disabled = 1
+
+let $FZF_DEFAULT_COMMAND='fdfind --type f -E "*.xz" -E "*.gz" -E "*.zip" -E "*.rar" -E "*.mp4" -E "*.mp3" -E "*.mkv" -E "*.webm" -E "*.ogg" -E "*.flac" -E "*.iso" -E "*.jpg" -E "*.pdf" -E "*.ods" -E "*.odt" -E "*.epub" -E "*.png" -E "*.img" -E "*.avi" -E "*jpeg" -E "*.MP4" -E ".MOV" -E "JPG" -E "m4a"'
+let $FZF_DEFAULT_OPTS="--layout reverse"
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+
 " Keybidings
 
 " Toggle Light/Dark mode 
@@ -11,8 +23,8 @@ endfunction
 
 nnoremap <silent> <M-l> :call LightDarkModeToggle()<CR>
 
-nmap <M-C> :e $HOME/.config/nvim/init.vim<CR>
-nmap <M-P> :e $HOME/.config/nvim/plugins.vim<CR>
+nmap <M-C> :e $HOME/.config/nvim/init.lua<CR>
+" nmap <M-P> :e $HOME/.config/nvim/plugins.vim<CR>
 nmap n nzz
 nmap N Nzz
 
