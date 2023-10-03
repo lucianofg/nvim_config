@@ -26,7 +26,7 @@ require("lazy").setup({
     { 'VonHeikemen/lsp-zero.nvim',                    branch = 'v2.x' },
 
     -- Colorschemes
-    { "folke/tokyonight.nvim",                        lazy = false,   priority = 1000, opts = {} },
+    { "folke/tokyonight.nvim",                        lazy = false,       priority = 1000, opts = {} },
     { 'https://github.com/godlygeek/tabular' },
     { 'https://github.com/preservim/vim-markdown' },
 
@@ -44,21 +44,15 @@ require("lazy").setup({
     { 'tikhomirov/vim-glsl' },
     { 'https://github.com/tpope/vim-sleuth' },
     { 'https://github.com/tpope/vim-surround' },
+    { "nvim-treesitter/nvim-treesitter",              build = ":TSUpdate" },
 
     -- User interface
     { 'https://github.com/preservim/nerdtree' },
     { 'https://github.com/preservim/tagbar' },
     { 'https://github.com/junegunn/fzf' },
     { 'https://github.com/junegunn/fzf.vim' },
+    { 'https://github.com/mbbill/undotree' },
 
     -- Colorschemes
     { 'https://github.com/NLKNguyen/papercolor-theme' },
 })
-
--- Plugins configuration
-vim.g.vimtex_quickfix_enabled = 0
-vim.g.vim_markdown_folding_disabled = 1
-
-vim.env.FZF_DEFAULT_COMMAND =
-'fdfind --type f -E "*.xz" -E "*.gz" -E "*.zip" -E "*.rar" -E "*.mp4" -E "*.mp3" -E "*.mkv" -E "*.webm" -E "*.ogg" -E "*.flac" -E "*.iso" -E "*.jpg" -E "*.pdf" -E "*.ods" -E "*.odt" -E "*.epub" -E "*.png" -E "*.img" -E "*.avi" -E "*jpeg" -E "*.MP4" -E ".MOV" -E "JPG" -E "m4a"'
-vim.env.FZF_DEFAULT_OPTS = "--layout reverse"

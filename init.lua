@@ -1,9 +1,16 @@
-require("personal")
-require("plugins")
-require("lsp")
-require("plugins")
-require("keys")
+-- Initialize package manager
+require("pluginsconfig")
 
--- Set colorscheme
---vim.o.background = 'light'
-vim.cmd('colorscheme PaperColor')
+-- Personal configs (not related to plugins)
+require("generalconfig")
+require("lightdarkmodeconfig")
+require("spellcheckconfig")
+
+-- Plugins configuration
+require("undotreeconfig")
+require("vimtexconfig")
+require("treesitterconfig")
+require("languageserverconfig")
+require("fzfconfig")
+require("tagbarconfig")
+require("nerdtreeconfig")
