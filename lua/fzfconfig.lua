@@ -7,11 +7,12 @@ vim.env.FZF_DEFAULT_COMMAND = [[
 vim.env.FZF_DEFAULT_OPTS = "--layout reverse"
 
 -- Fzf keys
-vim.keymap.set('n', '<leader>e', ':FZF<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>cc', ':Colors<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>b', ':Buffers<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>l', ':Lines<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>tt', ':Tags<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>rg', ':Rg<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>s', ':Snippets<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>x', ':Commands<CR>', { noremap = true })
+vim.keymap.set('n' , '<leader>e'  , ':FZF<CR>'      , { noremap = true })
+vim.keymap.set('n' , '<leader>cc' , ':Colors<CR>'   , { noremap = true })
+vim.keymap.set('n' , '<leader>b'  , ':Buffers<CR>'  , { noremap = true })
+vim.keymap.set('n' , '<leader>l'  , ':Lines<CR>'    , { noremap = true })
+vim.keymap.set('n' , '<leader>tt' , ':Tags<CR>'     , { noremap = true })
+vim.keymap.set('n' , '<leader>rg' , ':Rg<CR>'       , { noremap = true })
+vim.keymap.set('n' , '<leader>s'  , ':Snippets<CR>' , { noremap = true })
+vim.keymap.set('n' , '<leader>x'  , ':Commands<CR>' , { noremap = true })
+vim.keymap.set('n' , '<leader>m'  , ':Marks<CR>'    , { noremap = true })

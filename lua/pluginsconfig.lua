@@ -21,12 +21,12 @@ require("lazy").setup({
     -- Autocompletion
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp' },
-    { 'L3MON4D3/LuaSnip' },
+    { 'L3MON4D3/LuaSnip',                             version = "v2.*",                               build =
+    "make install_jsregexp" },
     -- LSP Zero
     { 'VonHeikemen/lsp-zero.nvim',                    branch = 'v2.x' },
 
     -- Colorschemes
-    { "folke/tokyonight.nvim",                        lazy = false,       priority = 1000, opts = {} },
     { 'https://github.com/godlygeek/tabular' },
     { 'https://github.com/preservim/vim-markdown' },
 
@@ -43,7 +43,7 @@ require("lazy").setup({
     { 'https://github.com/jiangmiao/auto-pairs' },
     { 'tikhomirov/vim-glsl' },
     { 'https://github.com/tpope/vim-sleuth' },
-    { 'https://github.com/tpope/vim-surround' },
+    { 'https://github.com/tpope/vim-surround',        dependencies = { 'rafamadriz/friendly-snippets' } },
     { "nvim-treesitter/nvim-treesitter",              build = ":TSUpdate" },
 
     -- User interface
@@ -56,3 +56,5 @@ require("lazy").setup({
     -- Colorschemes
     { 'https://github.com/NLKNguyen/papercolor-theme' },
 })
+
+require("luasnip.loaders.from_vscode").lazy_load()
